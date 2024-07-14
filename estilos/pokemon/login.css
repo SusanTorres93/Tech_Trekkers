@@ -1,0 +1,264 @@
+body{
+    font-family: "Raleway", sans-serif;
+}
+/*Inicio estilos header*/
+header {
+    width: 100%;
+    height: 90px;
+    background-color: #ffe600;
+    position: relative;
+}
+
+#logoPokemon {
+    position: absolute;
+    width: 320px;
+    height: 120px;
+    left: 20px;
+    top: 30px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+.item-nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    background-color: #ffe600;
+}
+
+#contacto {
+    border-right: none;
+}
+
+li a {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.li-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+#img-home {
+    content: url('/imagenes/pokemon/home-img.png');
+    width: 75px;
+    height: 75px;
+}
+
+#titleHome{
+    margin-left: 15.5px;
+    font-family: "Poppins", sans-serif;;
+}
+
+/* Contenedor del botón */
+.button-container {
+    position: absolute; /* Posición absoluta para el botón dentro del header */
+    top: 50%; /* Centramos verticalmente dentro del header */
+    right: 20px; /* Ajusta la posición derecha según sea necesario */
+    transform: translateY(-50%); /* Centrado verticalmente */
+}
+
+/* Botón con icono */
+.icon-button {
+    background: none; /* Elimina el fondo predeterminado del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa por encima */
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    border-radius: 50%; /* Haz que el botón sea circular */
+    transition: transform 0.5s ease; /* Agrega un efecto de transición suave */
+}
+
+/* Imagen del botón con icono */
+.icon-button img {
+    width: 50px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 50px; /* Ajusta el tamaño del icono según sea necesario */
+}
+
+/*Inicio estilos main */
+#rectangulo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-image: url('/imagenes/pokemon/fondo.png');
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+#form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px; /*separar el contenedor del main*/
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.help-text {
+    color: #00bfff;
+    margin: 10px 0;
+}
+
+.guest-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.guest-button:hover {
+    background-color: #0056b3;
+}
+
+.no-account-text {
+    color: black;
+    margin: 10px 0;
+}
+
+.create-account-button {
+    padding: 10px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #0080b3;
+}
+
+/*Fin estilos main section*/
+
+/*Inicio estilos footer*/
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #b3a125;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+/*Estilos Pokemon Company*/
+footer #nombre-cliente {
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+/*Estilos Logo*/
+footer #trekkers {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#trekkers h2 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+} 
+
+#trekkers #logo-trekkers {
+    content: url(/imagenes/pokemon/logo_tech_trekkers.png);
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+}
+
+/*Estilos Redes */
+#youtube {
+    content: url(/imagenes/socialMedia/youtube_logo.png);
+    width: 55px;
+    height: 45px;
+}
+
+#facebook {
+    content: url(/imagenes/socialMedia/facebook_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#linkedin {
+    content: url(/imagenes/socialMedia/linkedin_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#instagram {
+    content: url(/imagenes/socialMedia/instagram_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-top: 12.5px;
+}
+
+.red-social {
+    align-items: baseline;
+    margin: 0px 40px;
+}
+/*Fin estilos footer*/

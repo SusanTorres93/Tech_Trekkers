@@ -1,0 +1,305 @@
+/*Inicio estilos header*/
+
+/*Inicio estilos nueva franja roja*/
+#backgroundRojo {
+    display: flex;
+    background-color: #ff0000;
+    padding: 15px;
+    padding-left: 25px;
+}
+
+#iconoPikachu {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 660px;
+    top: 1px;
+}
+
+#iconoPikachu img {
+    height: 180px;
+}
+
+
+#backgroundRojo h2 {
+    color: white;
+    white-space: pre;
+    position: absolute;
+    right: 60px;
+    top: 45px;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#logoPokemon {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    position: relative;
+    z-index: 1; 
+}
+
+
+
+
+/*Fin estilos nueva franja roja*/
+
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #fede00;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.item-nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    background-color: #fede00;
+    border-right: solid 3px #b3a125;
+}
+
+/* #home {
+    border-left: solid 3px #b3a125;;
+} */
+
+#contacto {
+    border-right: none;
+}
+
+li a {
+    color: rgb(54, 53, 53);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.li-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+#img-home {
+    content: url('/imagenes/pokemon/home-img.png');
+    width: 75px;
+    height: 75px;
+}
+
+#img-jugar {
+    content: url(/imagenes/pokemon/jugar-img.png);
+    width: 75px;
+    height: 75px;
+}
+
+#img-amigos {
+    content: url(/imagenes/pokemon/amigos-img.png);
+    width: 70px;
+    height: 70px;
+}
+
+#img-gimnasios {
+    content: url(/imagenes/pokemon/gym-img.png);
+    width: 75px;
+    height: 75px;
+}
+
+#img-contacto {
+    content: url(/imagenes/pokemon/contacto-img.png);
+    width: 50px;
+    height: 75px;
+    margin-left: 70px;
+    
+}
+/*Fin estilos header*/
+/*-------------*/
+/*-------------*/
+/*-------------*/
+/*Inicio estilos main section*/
+#hero-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    background-color: #3b4cca;
+    font-family: "Raleway", sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+#formulario {
+    width: 70%;
+    background-image: url('/imagenes/pokemon/pokemon_background2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#formulario h1 {
+    width: 70%;
+    font-size: 45px;
+    margin-left: 200px;
+    border-bottom: 5px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contenedor-nombre {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor-nombre .campo {
+    width: 70%;
+    margin: 0px 20px 20px 60px;
+}
+
+.campo {
+    margin: 0px 20px 10px 60px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#contenedor-id-foto {
+    display: flex;
+    margin-top: 10px;
+}
+
+#contenedor-id-foto #foto {
+    margin-left: 30%;
+}
+
+#btnRegistrar {
+    width: 50%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 15px 0px 0px 300px;
+    
+}
+
+#btnRegistrar:hover {
+    background-color: #3b4cca;
+}
+
+/*Fin estilos main section*/
+/*-------------*/
+/*-------------*/
+/*-------------*/
+/*Inicio estilos footer*/
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #b3a125;
+}
+
+/*Estilos Pokemon Company*/
+footer #nombre-cliente {
+    margin-top: 25px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+/*Estilos Tech Trekkers*/
+footer #trekkers {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#trekkers h1 {
+    font-family: "Raleway", sans-serif;
+    color: white;
+} 
+
+#trekkers #logo-trekkers {
+    content: url(/imagenes/pokemon/logo_tech_trekkers.png);
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+}
+
+/*Estilos Redes sociales*/
+#youtube {
+    content: url(/imagenes/socialMedia/youtube_logo.png);
+    width: 55px;
+    height: 45px;
+}
+
+#facebook {
+    content: url(/imagenes/socialMedia/facebook_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#linkedin {
+    content: url(/imagenes/socialMedia/linkedin_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#instagram {
+    content: url(/imagenes/socialMedia/instagram_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-top: 12.5px;
+}
+
+.red-social {
+    align-items: baseline;
+    margin: 0px 40px;
+}
+/*Fin estilos footer*/
+/*-------------*/
+/*-------------*/
+/*-------------*/
+/*Inicio estilos de validaciones*/
+
+/*Cuadro del input en rojo si esta vacio*/
+.error{
+    border: 2px solid red;
+}
+
+
+
+
+/*Fin estilos de validaciones*/
