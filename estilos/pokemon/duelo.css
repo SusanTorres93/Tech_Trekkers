@@ -60,23 +60,23 @@ li a {
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-amigos {
-    content: url(/imagenes/pokemon/amigos-img.png);
+#img-perfil {
+    content: url(/imagenes/pokemon/entrenador-pokemon.png);
     width: 70px;
     height: 70px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-gimnasios {
-    content: url(/imagenes/pokemon/gym-img.png);
+#img-amigos {
+    content: url(/imagenes/pokemon/amigos-img.png);
     width: 70px;
     height: 75px;
     margin-bottom: 30px; /* Añade un margen inferior de 10px */
 }
 
-#img-contacto {
-    content: url(/imagenes/pokemon/contacto-img.png);
-    width: 50px;
+#img-gimnasios {
+    content: url(/imagenes/pokemon/gym-img.png);
+    width: 70px;
     height: 75px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }

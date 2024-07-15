@@ -104,14 +104,14 @@ li a {
     height: 75px;
 }
 
-#img-amigos {
-    content: url(/imagenes/pokemon/amigos-img.png);
+#img-peliculas {
+    content: url(/imagenes/pokemon/peliculas.png);
     width: 70px;
     height: 70px;
 }
 
-#img-gimnasios {
-    content: url(/imagenes/pokemon/gym-img.png);
+#img-noticias {
+    content: url(/imagenes/pokemon/noticias.png);
     width: 75px;
     height: 75px;
 }

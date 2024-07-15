@@ -1,3 +1,13 @@
+// Ingresar como invitado
+document.addEventListener('DOMContentLoaded', function () {
+    const btnGuestLogin = document.getElementById('btnGuestLogin');
+
+    btnGuestLogin.addEventListener('click', function () {
+        window.location.href = '/Pokemon/jugar.html';
+    });
+});
+
+
 const inputUsuario = document.getElementById("username")
 const inputContrasena = document.getElementById("password")
 const btnIngresar = document.getElementById("btnIngresar")
@@ -49,6 +59,28 @@ function validarContrasena(){
 
     return error
 }
+
+// Obtener el formulario y agregar un evento de escucha para el envío
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    // Prevenir el envío del formulario por defecto
+    event.preventDefault();
+
+    // Obtener los valores de usuario y contraseña
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+
+    // Aquí puedes realizar la validación del usuario y contraseña
+    // Supongamos que la validación es exitosa
+    if (username === 'usuario' && password === 'contraseña') {
+        // Redirigir al usuario a la página deseada
+        window.location.href = "/Pokemon/about.html";
+    } else {
+        // En caso de error de inicio de sesión, puedes mostrar un mensaje o realizar otra acción
+        alert('Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.');
+    }
+});
+
+
 
 //limpiar campos del formulario
 function limpiarCampos(){

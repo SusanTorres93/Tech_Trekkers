@@ -91,6 +91,7 @@ header nav ul {
     border-right: none;
 }
 
+ /*Seccion Navegacion*/
 li a {
     color: rgb(54, 53, 53);
     font-family: "Poppins", sans-serif;
@@ -122,15 +123,15 @@ li a {
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-amigos {
-    content: url(/imagenes/pokemon/amigos-img.png);
+#img-peliculas {
+    content: url(/imagenes/pokemon/peliculas.png);
     width: 70px;
     height: 70px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-gimnasios {
-    content: url(/imagenes/pokemon/gym-img.png);
+#img-noticias {
+    content: url(/imagenes/pokemon/noticias.png);
     width: 70px;
     height: 75px;
     margin-bottom: 30px; /* Añade un margen inferior de 10px */

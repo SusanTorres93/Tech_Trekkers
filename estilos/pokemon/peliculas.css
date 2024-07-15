@@ -3,7 +3,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-   font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
+    
 }
 
 #backgroundRojo {
@@ -63,7 +64,34 @@ header nav ul {
     background-color: #fede00;
     border-right: solid 3px #b3a125;
 }
+  /* Contenedor del botón */
+  .button-container {
+    position: fixed; /* Mantiene el contenedor del botón fijo */
+    bottom: 20px; /* Ajusta la posición inferior según sea necesario */
+    right: 20px; /* Ajusta la posición derecha según sea necesario */
+    z-index: 100; /* Asegúrate de que el botón permanezca encima */
+  }
+  
+  /* Botón con icono */
+  .icon-button {
+    background: none; /* Elimina el fondo predeterminado del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa por encima */
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    border-radius: 50%; /* Haz que el botón sea circular */
+    transition: transform 0.5s ease; /* Agrega un efecto de transición suave */
+  }
+  
+  /* Imagen del botón con icono */
+  .icon-button img {
+    width: 90px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 90px; /* Ajusta el tamaño del icono según sea necesario */
+  }
+#contacto {
+    border-right: none;
+}
 
+ /*Seccion Navegacion*/
 li a {
     color: rgb(54, 53, 53);
     font-family: "Poppins", sans-serif;
@@ -73,10 +101,6 @@ li a {
     margin-top: 40px;
     font-size: 22px;
     font-weight: bold;
-}
-
-#contacto {
-    border-right: none;
 }
 
 .li-img {
@@ -121,80 +145,75 @@ li a {
 }
 /*Fin estilos header*/
 
-/* Estilos del formulario */
+/*Contenedor peliculas*/
+
+/*Seccion noticias*/
 .form-container {
-    background-image: url(/imagenes/pokemon/fondo.png);
-    padding: 20px 0; /* Ajusta el espaciado interior del contenedor */
+    background-color: white;
+    padding: 100px 0; /* Ajusta el espaciado interior del contenedor */
     text-align: center; /* Centra el contenido del formulario */
 }
-
-.container {
-    width: 40%;
-    margin: auto;
-}
-
-#formulario-contacto {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px; /* Añade bordes redondeados */
-}
-
-h1 {
+h3{
+    text-align: center;
     color: #3B4CCA;
     font-size: 30px; /* Aumenta el tamaño del título */
     font-weight: bold;
     margin-bottom: 20px; /* Añade espacio inferior */
+
+}
+ 
+.peliculas-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-form {
-    
-    display:block; /* Cambia a un layout de cuadrícula */
-    grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
-    grid-gap: 20px; /* Espacio entre elementos del formulario */
+.peliculas {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    width: 300px;
 }
 
-.form-group {
+.peliculas img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.pelicula-info {
+    padding: 15px;
+}
+
+.pelicula-info h2 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-label {
-    font-weight: bold;
-    display: block; /* Asegura que las etiquetas ocupen una línea completa */
-    margin-bottom: 5px; /* Añade espacio inferior entre etiquetas y campos */
+.pelicula-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 10px;
 }
 
-input, textarea {
-    width: 50%; /* Ancho completo del contenedor */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
+.button {
+    display: inline-block;
     background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Añade transición suave */
-    width: 50%; /* Ancho del botón */
-    margin: 20px auto; /* Centra el botón */
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #0056b3;
 }
-/* Fin estilos del formulario */
-
-
 
 /*Inicio estilos footer*/
 footer {
@@ -206,6 +225,7 @@ footer {
     margin-top: 0px;
     position: relative;
     z-index: 1;
+    padding: 0%;
 }
 
 /*Estilos Pokemon Company*/
@@ -215,7 +235,7 @@ footer #nombre-cliente {
     color: white;
 }
 
-/*Estilos Tech Trekkers*/
+/*Estilos Logo*/
 footer #trekkers {
     margin-top: 25px;
     display: flex;
@@ -234,7 +254,7 @@ footer #trekkers {
     margin-left: 70px;
 }
 
-/*Estilos Redes sociales*/
+/*Estilos Redes */
 #youtube {
     content: url(/imagenes/socialMedia/youtube_logo.png);
     width: 55px;
@@ -263,11 +283,12 @@ footer #trekkers {
     display: flex;
     justify-content: center;
     width: 30%;
-    margin-top: 13px;
+    margin-top: 12.5px;
 }
 
 .red-social {
     align-items: baseline;
-    margin: 0 40px;
+    margin: 0px 40px;
 }
 /*Fin estilos footer*/
+

@@ -64,6 +64,10 @@ header nav ul {
     border-right: solid 3px #b3a125;
 }
 
+#contacto {
+    border-right: none;
+}
+
 li a {
     color: rgb(54, 53, 53);
     font-family: "Poppins", sans-serif;
@@ -73,10 +77,6 @@ li a {
     margin-top: 40px;
     font-size: 22px;
     font-weight: bold;
-}
-
-#contacto {
-    border-right: none;
 }
 
 .li-img {
@@ -99,100 +99,50 @@ li a {
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-peliculas {
-    content: url(/imagenes/pokemon/peliculas.png);
+#img-perfil {
+    content: url(/imagenes/pokemon/entrenador-pokemon.png);
     width: 70px;
     height: 70px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-noticias {
-    content: url(/imagenes/pokemon/noticias.png);
+#img-amigos {
+    content: url(/imagenes/pokemon/amigos-img.png);
     width: 70px;
     height: 75px;
     margin-bottom: 30px; /* Añade un margen inferior de 10px */
 }
 
-#img-contacto {
-    content: url(/imagenes/pokemon/contacto-img.png);
-    width: 50px;
+#img-gimnasios {
+    content: url(/imagenes/pokemon/gym-img.png);
+    width: 70px;
     height: 75px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 /*Fin estilos header*/
 
-/* Estilos del formulario */
+/* Estilos lista amigos*/
 .form-container {
-    background-image: url(/imagenes/pokemon/fondo.png);
-    padding: 20px 0; /* Ajusta el espaciado interior del contenedor */
+    background-color: #fff;
+    padding: 100px 0; /* Ajusta el espaciado interior del contenedor */
     text-align: center; /* Centra el contenido del formulario */
 }
-
 .container {
-    width: 40%;
-    margin: auto;
-}
-
-#formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
     background-color: #fff;
-    padding: 30px;
-    border-radius: 8px; /* Añade bordes redondeados */
+    padding: 20px;
+    border-radius: 10px;
+
 }
 
 h1 {
+    text-align: center;
     color: #3B4CCA;
     font-size: 30px; /* Aumenta el tamaño del título */
     font-weight: bold;
     margin-bottom: 20px; /* Añade espacio inferior */
 }
-
-form {
-    
-    display:block; /* Cambia a un layout de cuadrícula */
-    grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
-    grid-gap: 20px; /* Espacio entre elementos del formulario */
-}
-
-.form-group {
-    margin-bottom: 10px;
-}
-
-label {
-    font-weight: bold;
-    display: block; /* Asegura que las etiquetas ocupen una línea completa */
-    margin-bottom: 5px; /* Añade espacio inferior entre etiquetas y campos */
-}
-
-input, textarea {
-    width: 50%; /* Ancho completo del contenedor */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Añade transición suave */
-    width: 50%; /* Ancho del botón */
-    margin: 20px auto; /* Centra el botón */
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-/* Fin estilos del formulario */
 
 
 

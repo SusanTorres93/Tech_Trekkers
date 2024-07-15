@@ -70,25 +70,6 @@ header nav ul {
     right: 20px; /* Ajusta la posición derecha según sea necesario */
     z-index: 100; /* Asegúrate de que el botón permanezca encima */
   }
-  
-  /* Botón con icono */
-  .icon-button {
-    background: none; /* Elimina el fondo predeterminado del botón */
-    border: none; /* Elimina el borde predeterminado del botón */
-    cursor: pointer; /* Cambia el cursor a mano cuando se pasa por encima */
-    padding: 10px; /* Ajusta el padding según sea necesario */
-    border-radius: 50%; /* Haz que el botón sea circular */
-    transition: transform 0.5s ease; /* Agrega un efecto de transición suave */
-  }
-  
-  /* Imagen del botón con icono */
-  .icon-button img {
-    width: 90px; /* Ajusta el tamaño del icono según sea necesario */
-    height: 90px; /* Ajusta el tamaño del icono según sea necesario */
-  }
-#contacto {
-    border-right: none;
-}
 
 li a {
     color: rgb(54, 53, 53);
@@ -121,23 +102,23 @@ li a {
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-amigos {
-    content: url(/imagenes/pokemon/amigos-img.png);
+#img-perfil {
+    content: url(/imagenes/pokemon/entrenador-pokemon.png);
     width: 70px;
     height: 70px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
 
-#img-gimnasios {
-    content: url(/imagenes/pokemon/gym-img.png);
+#img-amigos {
+    content: url(/imagenes/pokemon/amigos-img.png);
     width: 70px;
     height: 75px;
     margin-bottom: 30px; /* Añade un margen inferior de 10px */
 }
 
-#img-contacto {
-    content: url(/imagenes/pokemon/contacto-img.png);
-    width: 50px;
+#img-gimnasios {
+    content: url(/imagenes/pokemon/gym-img.png);
+    width: 70px;
     height: 75px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
