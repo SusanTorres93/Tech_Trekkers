@@ -146,10 +146,8 @@ li a {
 /*Fin estilos header*/
 
 /*Contenedor peliculas*/
-
-/*Seccion noticias*/
 .form-container {
-    background-color: white;
+    background-image: url('/imagenes/pokemon/fondo.png');
     padding: 100px 0; /* Ajusta el espaciado interior del contenedor */
     text-align: center; /* Centra el contenido del formulario */
 }

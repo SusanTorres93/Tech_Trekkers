@@ -100,6 +100,20 @@ function validaremail(){
     return error
 }
 
+//validar la contraseña
+function validarContrasena(){
+    let error = false
+    let textoUsuario = inputContrasena.value
+    let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()\-_=+{}\[\]:;"',.<>?\\|]).{12,}$/
+    if(!regex.test(textoUsuario)){
+        inputContrasena.classList.add('error')
+        error = true
+    }else{
+        inputContrasena.classList.remove('error')
+    }
+
+    return error
+}
 //Funcion para validar Fecha Nacimiento
 function validarfechanacimiento(){
     let error = false
@@ -158,6 +172,7 @@ inputnombre.value = ""
 inputapellido1.value = ""
 inputapellido2.value = ""
 inputusuario.value = ""
+inputContrasena.value = ""
 inputemail.value = ""
 inputfechanacimiento.value = ""
 inputidentificacion.value = ""
@@ -171,6 +186,7 @@ function enviardatos() {
     let errorapellido1 = validarapellido1()
     let errorapellido2 = validarapellido2()
     let errorusuario = validarusuario()
+    let errorcontrasena = validarContrasena()
     let erroremail = validaremail()
     let erroridentificacion = validaridentificacion()
 
@@ -204,6 +220,12 @@ function enviardatos() {
             text: "Utilice letras de la A a la Z, tanto minúsculas como mayúsculas, números del 0 al 9, y los símbolos !@#$%",
             icon: "warning"
           });
+        } else if (errorcontrasena) {
+            Swal.fire({
+                title: "Error al ingresar la contraseña!",
+                text: "Utilice letras de la A a la Z, tanto minúsculas como mayúsculas, números del 0 al 9, y los símbolos !@#$%",
+                icon: "warning"
+              });
     } else if (erroremail) {
         Swal.fire({
             title: "Error al ingresar el correo electrónico!",

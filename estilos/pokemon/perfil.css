@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-   font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 #backgroundRojo {
@@ -41,8 +41,7 @@ body, html {
     text-align: center;
 }
 
-  
-  header {
+header {
     width: 100%;
     height: 150px;
     background-color: #fede00;
@@ -119,31 +118,67 @@ li a {
     height: 75px;
     margin-bottom: 10px; /* Añade un margen inferior de 10px */
 }
+
 /*Fin estilos header*/
 
-/* Estilos lista amigos*/
-.form-container {
-    background-color: #fff;
-    padding: 100px 0; /* Ajusta el espaciado interior del contenedor */
-    text-align: center; /* Centra el contenido del formulario */
+/*Estilos perfil*/
+main {
+    width: 100%;
+    height: 100vh; /* Ajustar al tamaño completo del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/imagenes/pokemon/fondo.png');
 }
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
 
+#form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 200px; /* Tamaño del logo */
+    height: auto; /* Altura automática según el ancho */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
 h1 {
-    text-align: center;
-    color: #3B4CCA;
-    font-size: 30px; /* Aumenta el tamaño del título */
-    font-weight: bold;
-    margin-bottom: 20px; /* Añade espacio inferior */
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+}
 
 
 /*Inicio estilos footer*/
