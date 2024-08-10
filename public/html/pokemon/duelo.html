@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="/public/estilos/pokemon/reset.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/duelo.css">
+    <link rel="icon" href="/public/imagenes/pokemon/icons8-pokemon-48.png"> <!--icono pagina-->
+
+</head>
+
+<body>
+    <!--Inicio del header-->
+    <header>
+        <nav>
+            <ul>
+                <div id="home" class="item-nav">
+                    <li id="test"><a href="/public/html/pokemon/welcome.html">Inicio</a></li>
+                    <div class="li-img" id="img-home"></div>
+                </div>
+                <div id="jugar" class="item-nav">
+                    <li><a href="/public/html/pokemon/jugar.html">Jugar</a></li>
+                    <div id="img-jugar" class="li-img"></div>
+                </div>
+                <div id="perfil" class="item-nav">
+                    <li><a href="/public/html/pokemon/perfil.html">Perfil</a></li>
+                    <div id="img-perfil" class="li-img"></div>
+                </div>
+                <div id="amigos" class="item-nav">
+                    <li><a href="/public/html/pokemon/friends.html">Amigos</a></li>
+                    <div id="img-amigos" class="li-img"></div>
+                </div>
+                <div id="gimnasios" class="item-nav">
+                    <li><a href="/public/html/pokemon/gimn.html">Gimnasios</a></li>
+                    <div id="img-gimnasios" class="li-img"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin del header-->
+
+    <!--Inicio de la seccion duelo-->
+    <section id="duelSct">
+        <div id="logoPokemon">
+            <div id="imgLogoPokemon"></div>
+        </div>
+        <div id="consoleDuelo">
+            <div id="screenDuelo">
+                <div id="pokemon1">
+                    <div id="imgPokemon1"></div>
+                    <div id="jugadorId1">
+                        <h3>Jugador 1</h3>
+                        <div id="livesJugador1">
+                            <div id="life1J1"></div>
+                            <div id="life2J1"></div>
+                            <div id="life3J1"></div>
+                        </div>
+                    </div>
+                    <div id="statsPokemon1">
+                        <select id="pokemon-select-1">
+                            <option value="">Select Pokémon</option>
+                        </select>
+                        <div class="pokemon-info" id="pokemon-info-1"></div>
+                    </div>
+                </div>
+                <div id="pokemon2">
+                    <div id="statsPokemon2">
+                        <select id="pokemon-select-2">
+                            <option value="">Select Pokémon</option>
+                        </select>
+                        <div class="pokemon-info" id="pokemon-info-2"></div>
+                    </div>
+                    <div id="jugadorId2">
+                        <h3>Jugador 2</h3>
+                        <div id="livesJugador2">
+                            <div id="life1J2"></div>
+                            <div id="life2J2"></div>
+                            <div id="life3J2"></div>
+                        </div>
+                    </div>
+                    <div id="imgPokemon2"></div>  
+                </div>
+            </div>
+            <div class="duel-container">
+                <button id="start-duel">Iniciar Duelo</button>
+                <button id="reset-duel" style="display: none;">Resetear Duelo</button>
+            </div>
+        </div>
+    </section>
+    <!--Fin de la seccion duelo-->
+
+    <!--Inicio del footer-->
+    <footer>
+        <div id="nombre-cliente">
+            <h2>&copy; Pokémon Company</h2>
+        </div>
+        <div id="redes-sociales">
+            <div class="red-social">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img id="youtube" src="/public/imagenes/socialMedia/youtube_logo.png" alt="YouTube">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img id="facebook" src="/public/imagenes/socialMedia/facebook_logo.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img id="linkedin" src="/public/imagenes/socialMedia/linkedin_logo.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img id="instagram" src="/public/imagenes/socialMedia/instagram_logo.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        
+        <!--Div Tech Trekkers-->
+        <div id="trekkers">
+            <h2>Desarrollado por Tech Trekkers</h2>
+            <a href="/public/html/empresa/index.html" target="_blank">
+                <div id="logo-trekkers"></div>
+            </a>
+        </div>
+    </footer>
+    <!--Fin del footer-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!--Nos permite comunicarnos con el API-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/public/controladores/pokemon/duelo.js"></script>
+</body>
+</html>

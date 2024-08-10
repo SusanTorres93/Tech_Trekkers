@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Company</title>
+    <link rel="stylesheet" href="/public/estilos/pokemon/reset.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/welcome.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/pokedex.css">
+    <link rel="icon" href="/public/imagenes/pokemon/icons8-pokemon-48.png"> <!--icono pagina-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/public/controladores/pokemon/pokedex.js"></script>
+</head>
+
+<!-- Franja roja -->
+<div id="backgroundRojo">
+    <div id="topHero">
+        <div id="logoPokemon">
+            <img src="/public/imagenes/pokemon/pokemon_logo.png" alt="Logo Pokémon">
+        </div>
+        <div id="iconoPikachu">
+            <img src="/public/imagenes/pokemon/icono_pikachu.png" alt="Icono Pikachu">
+        </div>
+        <div id="textoTopHero">
+            <h2>Usa nuestro Pokédex para ver a todos los Pokémon y otros datos sobre ellos!</h2>
+        </div>
+    </div>
+</div>
+
+    <!--Boton Login-->
+    <div class="button-container">
+        <a href="/public/html/pokemon/login.html" class="icon-button">
+            <img src="/public/imagenes/pokemon/login3.png" alt="Icon">
+        </a>
+    </div>
+
+
+    <!--Inicio de header-->
+    <header>
+        <nav>
+            <ul>
+                <div id="home" class="item-nav">
+                    <li id="test"><a href="/public/html/pokemon/welcome.html">Inicio</a></li>
+                    <div class="li-img" id="img-home"></div>
+                </div>
+                <div id="jugar" class="item-nav">
+                    <li><a href="/public/html/pokemon/login.html">Jugar</a></li>
+                    <div id="img-jugar" class="li-img"></div>
+                </div>
+                <div id="peliculas" class="item-nav">
+                    <li><a href="/public/html/pokemon/peliculas.html">Películas</a></li>
+                    <div id="img-peliculas" class="li-img"></div>
+                </div>
+                <div id="noticias" class="item-nav">
+                    <li><a href="/public/html/pokemon/noticias.html">Noticias</a></li>
+                    <div id="img-noticias" class="li-img"></div>
+                </div>
+                <div id="contacto" class="item-nav">
+                    <li><a href="/public/html/pokemon/contact.html">Contacto</a></li>
+                    <div id="img-contacto" class="li-img"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Imagen de los pokemones -->
+   <div id="hero">
+    <img id="background" src="/public/imagenes/pokemon/Pokemon Background.jpg" alt="Pokemon Background">
+    <div id="rectangulo">
+            <p id="texto">Te damos la bienvenida a</p>
+            <p id="texto">The Pokémon Company International</p>
+            &nbsp;
+            <p id="texto">The Pokémon Company International (TPCi) tiene como misión deleitar a los fans de la marca con productos excelentes y experiencias valiosas. Esperamos contribuir a que el mundo sea un lugar mejor para todos, creando oportunidades para formar vínculos y crecer a través de las experiencias compartidas y la competencia sana.</p>
+            <p id="texto">Este es un juego competitivo donde los jugadores se enfrentan entre sí utilizando equipos de Pokémon que han entrenado y preparado. Cada jugador elige un conjunto de Pokémon con habilidades y movimientos específicos, y la estrategia es fundamental para ganar.</p>
+            <p id="texto">Este tipo de juego ofrece ventajas como la necesidad de estrategias y tácticas complejas, una gran variedad de Pokémon y movimientos, una comunidad activa y competitiva, y el desarrollo de habilidades de pensamiento crítico y resolución de problemas. Sin embargo, también presenta desventajas, como una curva de aprendizaje pronunciada para los nuevos jugadores.</p>
+        </div>
+    
+    <div id="logoPokebola">
+        <a href="/public/html/pokemon/login.html" target="_blank">
+            <img src="/public/imagenes/pokemon/pokebola_icono.png" alt="Logo Pokebola">
+        </a>
+    </div>
+    <div id="textoPokebola">
+        <h1 id="jugarAhora">Jugar Ahora!</h1>
+    </div>
+</div>
+
+<!-- Pokedex -->
+<h1 id="pokedex-title">Pokédex</h1>
+<div class="gallery-container">
+    <button class="nav-button" id="prev">&lt;</button>
+    <div id="gallery" class="gallery"></div>
+    <button class="nav-button" id="next">&gt;</button>
+</div>
+  <footer>
+    <div id="nombre-cliente">
+        <h2>&copy; Pokémon Company</h2>
+    </div>
+    <div id="redes-sociales">
+        <div class="red-social">
+            <a href="https://www.youtube.com" target="_blank">
+                <img id="youtube" src="/public/imagenes/socialMedia/youtube_logo.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img id="facebook" src="/public/imagenes/socialMedia/facebook_logo.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img id="linkedin" src="/public/imagenes/socialMedia/linkedin_logo.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img id="instagram" src="/public/imagenes/socialMedia/instagram_logo.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    
+    <!--Div Tech Trekkers-->
+    <div id="trekkers">
+        <h2>Desarrollado por Tech Trekkers</h2>
+        <a href="/public/html/empresa/index.html" target="_blank">
+            <div id="logo-trekkers"></div>
+        </a>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="/public/estilos/pokemon/reset.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/perfil.css">
+    <link rel="icon" href="/public/imagenes/pokemon/icons8-pokemon-48.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Franja roja -->
+    <div id="backgroundRojo">
+        <div id="topHero">
+            <div id="logoPokemon">
+                <img src="/public/imagenes/pokemon/pokemon_logo.png" alt="Logo Pokémon">
+            </div>
+            <div id="iconoPikachu">
+                <img src="/public/imagenes/pokemon/icono_pikachu.png" alt="Icono Pikachu">
+            </div>
+            <div id="textoTopHero">
+                <h2>Usa nuestro Pokédex para ver a todos los Pokémon y otros datos sobre ellos!</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Inicio de header-->
+    <header>
+        <nav>
+            <ul>
+                <div id="home" class="item-nav">
+                    <li id="test"><a href="/public/html/pokemon/welcome.html">Inicio</a></li>
+                    <div class="li-img" id="img-home"></div>
+                </div>
+                <div id="jugar" class="item-nav">
+                    <li><a href="/public/html/pokemon/jugar.html">Jugar</a></li>
+                    <div id="img-jugar" class="li-img"></div>
+                </div>
+                <div id="perfil" class="item-nav">
+                    <li><a href="/public/html/pokemon/perfil.html">Perfil</a></li>
+                    <div id="img-perfil" class="li-img"></div>
+                </div>
+                <div id="amigos" class="item-nav">
+                    <li><a href="/public/html/pokemon/friends.html">Amigos</a></li>
+                    <div id="img-amigos" class="li-img"></div>
+                </div>
+                <div id="gimnasios" class="item-nav">
+                    <li><a href="/public/html/pokemon/gimn.html">Gimnasios</a></li>
+                    <div id="img-gimnasios" class="li-img"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de perfil -->
+   
+    <div id="seccion-perfil">
+        <main>
+            
+            <div id="form-container">
+                <img src="/public/imagenes/pokemon/pokemon_logo.png" alt="Logo Pokémon" class="logo">
+                <h1>Perfil de Usuario</h1>
+                <form id="profileForm">
+                    <div class="profile-pic">
+                        <img id="profileImage" src="/public/imagenes/default-profile.png" alt="Foto de Perfil">
+                        <input type="file" id="uploadImage" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="primer-apellido">Primer Apellido:</label>
+                        <input type="text" id="primer-apellido" name="primer-apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="segundo-apellido">Segundo Apellido:</label>
+                        <input type="text" id="segundo-apellido" name="segundo-apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero-identificacion">Número de Identificación:</label>
+                        <input type="text" id="numero-identificacion" name="numero-identificacion" disabled>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Guardar</button>
+                    </div>
+                </form>
+    
+        </main>
+    </div>
+
+    <!-- Inicio del Footer -->
+    <footer>
+        <div id="nombre-cliente">
+            <h2>&copy; Pokémon Company</h2>
+        </div>
+        <div id="redes-sociales">
+            <div class="red-social">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img id="youtube" src="/public/imagenes/socialMedia/youtube_logo.png" alt="YouTube">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img id="facebook" src="/public/imagenes/socialMedia/facebook_logo.png" alt="Facebook">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img id="linkedin" src="/public/imagenes/socialMedia/linkedin_logo.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img id="instagram" src="/public/imagenes/socialMedia/instagram_logo.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div id="trekkers">
+            <h2>Desarrollado por Tech Trekkers</h2>
+            <a href="/public/html/empresa/index.html" target="_blank">
+                <div id="logo-trekkers"></div>
+            </a>
+        </div>
+    </footer>
+    <!-- Fin del footer -->
+
+    <script src="/public/controladores/pokemon/perfil.js"></script> <!--Alguien hizo mencion de este file, pero no existe-->
+</body>
+
+</html>
+
+

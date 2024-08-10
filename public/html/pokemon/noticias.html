@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Company</title>
+    <link rel="stylesheet" href="/public/estilos/pokemon/reset.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/noticias.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/pokedex.css">
+    <link rel="icon" href="/public/imagenes/pokemon/icons8-pokemon-48.png"> <!--icono pagina-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"rel="stylesheet">
+</head>
+
+<!-- Franja roja -->
+<div id="backgroundRojo">
+    <div id="topHero">
+        <div id="logoPokemon">
+            <img src="/public/imagenes/pokemon/pokemon_logo.png" alt="Logo Pokémon">
+        </div>
+        <div id="iconoPikachu">
+            <img src="/public/imagenes/pokemon/icono_pikachu.png" alt="Icono Pikachu">
+        </div>
+        <div id="textoTopHero">
+            <h2>Usa nuestro Pokédex para ver a todos los Pokémon y otros datos sobre ellos!</h2>
+        </div>
+    </div>
+</div>
+
+    <!--Boton Login-->
+    <div class="button-container">
+        <a href="/public/html/pokemon/login.html" class="icon-button">
+            <img src="/public/imagenes/pokemon/login3.png" alt="Icon">
+        </a>
+    </div>
+
+
+    <!--Inicio de header-->
+    <header>
+        <nav>
+            <ul>
+                <div id="home" class="item-nav">
+                    <li id="test"><a href="/public/html/pokemon/welcome.html">Inicio</a></li>
+                    <div class="li-img" id="img-home"></div>
+                </div>
+                <div id="jugar" class="item-nav">
+                    <li><a href="/public/html/pokemon/login.html">Jugar</a></li>
+                    <div id="img-jugar" class="li-img"></div>
+                </div>
+                <div id="peliculas" class="item-nav">
+                    <li><a href="/public/html/pokemon/peliculas.html">Películas</a></li>
+                    <div id="img-peliculas" class="li-img"></div>
+                </div>
+                <div id="noticias" class="item-nav">
+                    <li><a href="/public/html/pokemon/noticias.html">Noticias</a></li>
+                    <div id="img-noticias" class="li-img"></div>
+                </div>
+                <div id="contacto" class="item-nav">
+                    <li><a href="/public/html/pokemon/contact.html">Contacto</a></li>
+                    <div id="img-contacto" class="li-img"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+     <!--Seccion noticias -->
+     <div class="form-container">
+        <h3>Noticias Pokémon</h3>
+     <section class="noticias-container">
+        <article class="noticia">
+            <img src="/public/imagenes/movies/noti1.png" alt="Imagen de la noticia">
+            <div class="noticia-info">
+                <h2>Videojuegos y aplicaciones</h2>
+                <p>Pronto podrás añadir al Fuecoco de Rod a tu partida de Pokémon Scarlet o Pokémon Violet. El elenco de la serie Horizontes Pokémon ya está buscando aventuras por toda Paldea y más allá de sus confines.</p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/pronto-podras-anadir-al-fuecoco-de-rod-a-tu-partida-de-pokemon-scarlet-o-pokemon-violet" class="button">Leer más</a>
+            </div>
+        </article>
+
+        <article class="noticia">
+            <img src="/public/imagenes/movies/noti2.png" alt="Imagen de la noticia">
+            <div class="noticia-info">
+                <h2>La serie Horizontes Pokémon llegará a Netflix el 9 de agosto</h2>
+                <p>Prepárate para más aventuras increíbles a través del inmenso mundo Pokémon junto a Liko, Sprigatito, Rod, Fuecoco y la Tacleada de Voltionautas. Liko,Rod y la Tacleada de Voltionautas continúan su viaje mientras descubren los misterios del colgante de Liko y los Seis Héroes.</p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/la-tercera-parte-de-la-serie-horizontes-pokemon-llegara-a-netflix-el-9-de-agosto" class="button">Leer más</a>
+            </div>
+        </article>
+
+        <article class="noticia">
+            <img src="/public/imagenes/movies/noti3.png" alt="Imagen de la noticia">
+            <div class="noticia-info">
+                <h2>Cuádruple jugada de JCC Pokémon: Ogerpon ex</h2>
+                <p>Se dice que la tercera es la vencida, pero Ogerpon ex lleva las cosas un poco más lejos en la expansión Escarlata y Púrpura-Mascarada Crepuscular de JCC Pokémon. Cuatro increíbles Ogerpon ex son los protagonistas, y cada una de sus emblemáticas máscaras aporta algo diferente a los combates.</p>
+                <a href="https://www.pokemon.com/el/estrategia/cuadruple-jugada-de-jcc-pokemon-ogerpon-ex" class="button">Leer más</a>
+            </div>
+        </article>
+    </section>
+</div>
+    <!--Inicio footer-->
+  <footer>
+    <div id="nombre-cliente">
+        <h2>&copy; Pokémon Company</h2>
+    </div>
+    <div id="redes-sociales">
+        <div class="red-social">
+            <a href="https://www.youtube.com" target="_blank">
+                <img id="youtube" src="/public/imagenes/socialMedia/youtube_logo.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img id="facebook" src="/public/imagenes/socialMedia/facebook_logo.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img id="linkedin" src="/public/imagenes/socialMedia/linkedin_logo.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img id="instagram" src="/public/imagenes/socialMedia/instagram_logo.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    
+    <!--Div Tech Trekkers-->
+    <div id="trekkers">
+        <h2>Desarrollado por Tech Trekkers</h2>
+        <a href="/public/html/empresa/index.html" target="_blank">
+            <div id="logo-trekkers"></div>
+        </a>
+    </div>
+</footer>
+</body>
+
+</html>

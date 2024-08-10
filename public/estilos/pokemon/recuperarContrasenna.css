@@ -1,0 +1,104 @@
+/* Estilos para el fondo principal */
+#rectangulo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/public/imagenes/pokemon/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/* Estilos para el contenido del formulario */
+main {
+    width: 200%;
+    height: 100vh; /* Ajustar al tamaño completo del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 200px; /* Tamaño del logo */
+    height: auto; /* Altura automática según el ancho */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+h1 {
+    margin-bottom: 20px;
+    color:black;
+    font-size: 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.no-account-text {
+    color: black;
+    margin: 10px 0;
+    
+}
+
+.create-account-button {
+    padding: 10px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-account-button:hover {
+    background-color: #0080b3;
+}
+
+/* Añade margen inferior al botón de recuperar contraseña */
+#btnRecuperar {
+    margin-bottom: 20px;
+}
+
+/* Añade margen superior e inferior a los enlaces y párrafos */
+a, p.no-account-text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

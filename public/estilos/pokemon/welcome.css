@@ -1,0 +1,307 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+#backgroundRojo {
+    display: flex;
+    background-color: #ff0000;
+    padding: 15px 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topHero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#logoPokemon img {
+    width: 400px; /* Ajustar el tamaño del logo Pokémon */
+    height: auto;
+}
+
+#iconoPikachu img {
+    width: 170px; /* Ajustar el tamaño del icono Pikachu */
+    height: auto;
+    right: 950px;
+    top: 10px;
+    position: absolute;
+}
+
+#textoTopHero h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+  
+  header {
+    width: 100%;
+    height: 150px;
+    background-color: #fede00;
+    position: relative;
+    z-index: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.item-nav {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 150px;
+    background-color: #fede00;
+    border-right: solid 3px #b3a125;
+}
+  /* Contenedor del botón */
+  .button-container {
+    position: fixed; /* Mantiene el contenedor del botón fijo */
+    bottom: 20px; /* Ajusta la posición inferior según sea necesario */
+    right: 20px; /* Ajusta la posición derecha según sea necesario */
+    z-index: 100; /* Asegúrate de que el botón permanezca encima */
+  }
+  
+  /* Botón con icono */
+  .icon-button {
+    background: none; /* Elimina el fondo predeterminado del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa por encima */
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    border-radius: 50%; /* Haz que el botón sea circular */
+    transition: transform 0.5s ease; /* Agrega un efecto de transición suave */
+  }
+  
+  /* Imagen del botón con icono */
+  .icon-button img {
+    width: 90px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 90px; /* Ajusta el tamaño del icono según sea necesario */
+  }
+#contacto {
+    border-right: none;
+}
+
+ /*Seccion Navegacion*/
+li a {
+    color: rgb(54, 53, 53);
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.li-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 65px;
+}
+
+#img-home {
+    content: url(/public/imagenes/pokemon/home-img.png);
+    width: 70px;
+    height: 75px;
+}
+
+#img-jugar {
+    content: url(/public/imagenes/pokemon/jugar-img.png);
+    width: 70px;
+    height: 75px;
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+}
+
+#img-peliculas {
+    content: url(/public/imagenes/pokemon/peliculas.png);
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+}
+
+#img-noticias {
+    content: url(/public/imagenes/pokemon/noticias.png);
+    width: 70px;
+    height: 75px;
+    margin-bottom: 30px; /* Añade un margen inferior de 10px */
+}
+
+#img-contacto {
+    content: url(/public/imagenes/pokemon/contacto-img.png);
+    width: 50px;
+    height: 75px;
+    margin-bottom: 10px; /* Añade un margen inferior de 10px */
+}
+/*Fin estilos header*/
+
+/*Inicio estilos main section*/
+#hero {
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #3b4cca;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    position: relative;
+    z-index: 1;
+    height: 1500px;
+}
+
+#background {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 0;
+}
+
+#rectangulo {
+    background-color: rgba(0, 0, 0, 0.7); /* Opacidad del 70% */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    position: relative;
+    z-index: 2; 
+    top: 200px;
+    margin-bottom: 0px;
+}
+
+#texto {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.5;
+
+}
+
+#logoPokebola {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2; 
+    top: 300px;
+}
+
+#jugarAhora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textoPokebola {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    z-index: 2; 
+    top: 250px;
+    font-size: 60px;
+    color: #fede00; 
+}
+
+
+
+/*Inicio estilos footer*/
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #b3a125;
+    margin-top: 170px;
+    position: relative;
+    z-index: 1;
+}
+
+/*Estilos Pokemon Company*/
+footer #nombre-cliente {
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+/*Estilos Logo*/
+footer #trekkers {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#trekkers h2 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+} 
+
+#trekkers #logo-trekkers {
+    content: url(/public/imagenes/pokemon/logo_tech_trekkers.png);
+    width: 100px;
+    height: 100px;
+    margin-left: 70px;
+}
+
+/*Estilos Redes */
+#youtube {
+    content: url(/public/imagenes/socialMedia/youtube_logo.png);
+    width: 55px;
+    height: 45px;
+}
+
+#facebook {
+    content: url(/public/imagenes/socialMedia/facebook_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#linkedin {
+    content: url(/public/imagenes/socialMedia/linkedin_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#instagram {
+    content: url(/public/imagenes/socialMedia/instagram_logo.png);
+    width: 50px;
+    height: 50px;
+}
+
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-top: 12.5px;
+}
+
+.red-social {
+    align-items: baseline;
+    margin: 0px 40px;
+}
+/*Fin estilos footer*/
+

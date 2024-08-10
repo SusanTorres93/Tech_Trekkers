@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/imagenes/pokemon/icons8-pokemon-48.png"> <!--icono pagina-->
+    <title>Pokémon Company</title>
+    <link rel="stylesheet" href="/public/estilos/pokemon/reset.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/recuperarContrasenna.css">
+</head>
+<body>
+
+    <div id="rectangulo">
+        <main>
+            
+            <div id="form-container">
+                <img src="/public/imagenes/pokemon/pokemon_logo.png" alt="Logo Pokémon" class="logo">
+                <h1>Recuperación de tu cuenta</h1>
+                <form>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit" id="btnRecuperar">Recuperar Contraseña</button>
+                </form>
+                <a href="/public/html/pokemon/login.html">Volver a iniciar sesión</a>
+                <p class="no-account-text">¿No tienes una cuenta? <a href="/public/html/pokemon/form.html">Crea tu cuenta Pokémon</a></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/public/controladores/pokemon/recuperarContrasenna.js"></script>
+</body>
+</html>

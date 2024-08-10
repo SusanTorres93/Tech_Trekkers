@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/public/estilos/pokemon/reset.css">
+    <link rel="stylesheet" href="/public/estilos/pokemon/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/public/imagenes/pokemon/icons8-pokemon-48.png"> <!--icono pagina-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Inicio de header-->
+<!--Inicio de nueva franja roja-->
+<div id="backgroundRojo">
+    <div id="topHero">
+        <div>
+        <img id="logoPokemon" src="/public/imagenes/pokemon/pokemon_logo.png" alt="">
+    </div>
+    <div id="iconoPikachu">
+        <img src="/public/imagenes/pokemon/icono_pikachu.png" alt="">
+    </div>
+    <div id="textoTopHero">
+        <h2>Usa nuestro Pokédex para ver a todos 
+los Pokémon y otros datos sobre ellos! </h2>
+    </div>
+</div>
+</div>
+<!--Fin de nueva franja roja-->
+
+
+<header>
+    <nav>
+        <ul>
+            <div id="home" class="item-nav">
+                <li id="test"><a href="/public/html/pokemon/welcome.html">Inicio</a></li>
+                <div class="li-img" id="img-home"></div>
+            </div>
+            <div id="jugar" class="item-nav">
+                <li><a href="/public/html/pokemon/about.html">Jugar</a></li>
+                <div id="img-jugar" class="li-img"></div>
+            </div>
+            <div id="amigos" class="item-nav">
+                <li><a href="/public/html/pokemon/friends.html">Amigos</a></li>
+                <div id="img-amigos" class="li-img"></div>
+            </div>
+            <div id="gimnasios" class="item-nav">
+                <li><a href="/public/html/pokemon/gimn.html">Gimnasios</a></li>
+                <div id="img-gimnasios" class="li-img"></div>
+            </div>
+            <div id="contacto" class="item-nav">
+                <li><a href="/public/html/pokemon/contact.html">Contacto</a></li>
+                <div id="img-contacto" class="li-img"></div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<!--Fin de header-->
+
+<!--Inicio de formulario-->
+<div id="hero-section">
+<form id="formulario">
+    <h1>Formulario</h1>
+
+    <!--Inicio Contenedor nombre, apellidos-->
+    <div id="contenedor-nombre">
+    <!--Div Nombre-->
+    <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+    </div>
+
+    <!--Div Primer Apellido-->
+    <div class="campo">
+        <label for="apellido1">Primer Apellido</label>
+        <input type="text" id="apellido1" name="apellido1" required>
+    </div>
+
+    <!--Div Segundo Apellido-->
+    <div class="campo">
+        <label for="apellido2">Segundo Apellido</label>
+        <input type="text" id="apellido2" name="apellido2" required>
+    </div>
+    </div>
+    <!--Fin Contenedor nombre, apellidos-->
+
+    <!--Div de Usuario-->
+    <div class="campo">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" required>
+    </div>
+
+    <!--Div Email-->
+    <div class="campo">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <!--Div Fecha nacimiento-->
+    <div class="campo">
+        <label for="fechaNacimiento">Fecha de Nacimiento:</a>
+        <input type="date" id="fechanacimiento" name="fechanacimiento" required>
+    </div>
+
+    <!--Div Cedula-->
+    <div class="campo">
+        <label for="identificacion">Número Identificación</label>
+        <input type="text" id="identificacion" name="identificacion" required>
+    </div>
+
+    <!--Fieldset Tipo de cedula-->
+    <fieldset class="campo">
+        <legend>Tipo de Identificación:</legend>
+        <label>
+            <input type="radio" name="tipoIdentificacion" value="nacional" checked> Nacional
+        </label>
+        <label>
+            <input type="radio" name="tipoIdentificacion" value="dimex"> DIMEX
+        </label>
+    </fieldset>
+
+    <!--Div de Foto-->
+    <div class="campo" id="foto">
+        <label for="foto-usuario">Foto</label>
+        <img id="foto-usuario">
+        <button type="button" id="btn-foto-usuario">Agregar Foto</button>
+    </div>
+
+    <!--Div de boton-->
+    <div id="botontest" class="campo">
+         <button type="button" id="btnRegistrar">Enviar</button>
+    </div>
+</form>
+</div>
+</div>
+<!--Fin de formulario-->
+
+<!--Inicio de footer-->
+<footer>
+    <!--Div nombre client-->
+    <div id="nombre-cliente">
+        <h1>&copy; Pokemon Company</h1>
+    </div>
+
+    <!--Div redes sociales-->
+    <div id="redes-sociales">
+        <div class="red-social">
+            <a href="https://www.youtube.com" target="_blank">
+                <img id="youtube" src="/public/imagenes/socialMedia/youtube_logo.png" alt="YouTube">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img id="facebook" src="/public/imagenes/socialMedia/facebook_logo.png" alt="Facebook">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img id="linkedin" src="/public/imagenes/socialMedia/linkedin_logo.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img id="instagram" src="/public/imagenes/socialMedia/instagram_logo.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    
+<!--Div Tech Trekkers-->
+    <div id="trekkers">
+        <h1>Desarrollado por Tech Trekkers</h1>
+        <a href="/public/html/empresa/index.html" target="_blank">
+            <div id="logo-trekkers"></div>
+        </a>
+    </div>
+</footer>
+</footer>
+<!--Fin de footer-->
+
+<!--Axios-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!--Script Cloudinary-->
+<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+<!--Link Sweet Alert-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+<!--Link al servicioUsuarios.js-->
+<script src="/public/servicios/pokemon/servicioUsuarios.js"></script>
+<!--Link al servicioImagen.js-->
+<script src="/public/servicios/pokemon/servicioImagen.js"></script>
+<!--Link al controladorFormulario.js-->
+<script src="/public/controladores/pokemon/controladorFormulario.js"></script>
+
+</body>
+</html>
