@@ -17,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
         rel="stylesheet">
 
+
 </head>
 
 <!-- Franja roja -->
@@ -66,31 +67,30 @@
 <div class="form-container">
     <div class="container">
         <h1>Lista de Gimnasios</h1>
-        <div id="friend-list">
+        <div id="team-list">
         </div>
-        <div class="add-friend">
-            <input type="text" id="friend-name" placeholder="Nombre del Gimnasio">
-            <button onclick="addFriend()">Agregar Gimnasio</button>
-            <button onclick="deleteFriend()">Eliminar Gimnasio</button>
+        <div class="add-team">
+            <button id="abrirFormulario">Agregar Gimnasio</button>    
         </div>
-        <div>
-            <button class="save-button" onclick="saveChanges()">Guardar Cambios</button>
-    </div>
+        <div id="formularioEquipo">
+            <div id="contenidoFormulario" class="popup-content">
+                <span id="closePopupBtn" class="close">&times;</span>
+                <form>
+                    <label for="nombreEquipo">Nombre del Gimnasio:</label><br><br>
+                    <input type="text" id="nombreEquipo" name="name" required><br><br>
+                    <label for="Amigo">Amigo:</label><br><br>
+                    <select id="integrantes" name="integrantes" required>
+                        <option value="" disabled selected>Selecciona un amigo</option>
+                    </select><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
-<div>
-    <table id="tablaAmigos">
-        <thead>
-            <tr>
-                <th>Nombre de Usuario</th>
-                <th>Apodo</th>
-            </tr>
-        </thead>
-        <tbody >
-            <!-- Los registros se cargarán aquí -->
-        </tbody>
-    </table>
+<div id="equiposContainer">
+    
 </div>
 
 <!-- Inicio del Footer -->
@@ -134,6 +134,7 @@
 </footer>
 <!-- Fin del footer -->
 
-</body>
+<script src="/public/controladores/pokemon/controladorEquipos.js"></script>
 
+</body>
 </html>

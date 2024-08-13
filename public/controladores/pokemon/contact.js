@@ -26,45 +26,54 @@ document.addEventListener('DOMContentLoaded', function () {
             inputSubject.classList.remove("error");
         }
 
-        // Validar campo de Mensaje
-        if (inputMessage.value.trim() === "") {
-            inputMessage.classList.add("error");
-            error = true;
-        } else {
-            inputMessage.classList.remove("error");
-        }
+       // Validar campo de Mensaje
+       const mensaje = inputMessage.value.trim();
+       const palabrasMensaje = mensaje.split(/\s+/).length; // Cuenta las palabras
 
-        return error;
-    }
+       if (mensaje === "" || palabrasMensaje < 50) {
+           inputMessage.classList.add("error");
+           error = true;
+           Swal.fire({
+               title: "Mensaje demasiado corto",
+               text: "El mensaje debe contener al menos 50 palabras.",
+               icon: "warning"
+           });
+       } else {
+           inputMessage.classList.remove("error");
+       }
 
-    // Función para limpiar campos del formulario
-    function limpiarCampos() {
-        inputName.value = "";
-        inputEmail.value = "";
-        inputSubject.value = "";
-        inputMessage.value = "";
-    }
+       return error;
+   }
 
-    // Función para enviar datos
-    function enviarDatos() {
-        let errorCamposVacios = validarCamposVacios();
+   // Función para limpiar campos del formulario
+   function limpiarCampos() {
+       inputName.value = "";
+       inputEmail.value = "";
+       inputSubject.value = "";
+       inputMessage.value = "";
+   }
 
-        if (errorCamposVacios) {
-            Swal.fire({
-                title: "Campos obligatorios vacíos",
-                text: "Por favor complete todos los campos requeridos",
-                icon: "warning"
-            });
-        } else {
-            Swal.fire({
-                title: "¡Éxito!",
-                text: "Información enviada correctamente",
-                icon: "success"
-            });
-            limpiarCampos();
-        }
-    }
+   // Función para enviar datos
+   function enviarDatos() {
+       let errorCamposVacios = validarCamposVacios();
 
-    // Evento click para enviar datos al hacer clic en el botón
-    btnEnviar.addEventListener('click', enviarDatos);
+       if (errorCamposVacios) {
+           Swal.fire({
+               title: "Campos obligatorios vacíos",
+               text: "Por favor complete todos los campos requeridos",
+               icon: "warning"
+           });
+       } else {
+        
+           Swal.fire({
+               title: "¡Éxito!",
+               text: "Información enviada correctamente",
+               icon: "success"
+           });
+           limpiarCampos();
+       }
+   }
+
+   // Evento click para enviar datos al hacer clic en el botón
+   btnEnviar.addEventListener('click', enviarDatos);
 });
