@@ -9,17 +9,17 @@ let closePopupBtn = document.getElementById("closePopupBtn");
 
 // Cuando el usuario presione el botón "agregar equipo" se abre el formulario
 abrirFormulario.onclick = function() {
-    popup.style.display = "block";
+    formularioEquipo.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the popup
+// Cerrar el formulario con la X
 closePopupBtn.onclick = function() {
-    popup.style.display = "none";
+    formularioEquipo.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the popup, close it
+// Cerrar el formulario cuando el usuario le de click fuera del formulario
 window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = "none";
+    if (event.target == formularioEquipo) {
+        formularioEquipo.style.display = "none";
     }
 }

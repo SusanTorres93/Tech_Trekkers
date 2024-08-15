@@ -3,7 +3,7 @@ const Duelo = require('../models/DueloModel');
 
 const equipoSchema = new mongoose.Schema({
     nombreEquipo:{type:String, required:true},
-    integrantes:{type:String, required:false},
+    nombreAmigo:{type:String, required:false},
     resultadosDuelo:[Duelo.schema]
 })
 
