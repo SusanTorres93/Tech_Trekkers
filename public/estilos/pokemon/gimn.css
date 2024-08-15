@@ -262,7 +262,7 @@ select {
 }
 
 
-input[type="submit"] {
+#btnSubmitEquipo {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -278,6 +278,18 @@ input[type="submit"]:hover {
 }
 
 /*Fin seccion Equipos*/
+
+/*Inicio estilos tabla Equipos*/
+
+#tablaEquipos {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
 
 /*Inicio estilos footer*/
 footer {

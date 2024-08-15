@@ -3,6 +3,5 @@ const router = express.Router();
 
 const equipoController = require('../api/controllers/equipoController');
 
-router.post('/nuevoEquipo', equipoController.nuevoEquipo);
-
-module.exports = router;
+//POST 
+router.post('/equipo', equipoController.nuevoEquipo)
